@@ -1,6 +1,7 @@
-/.vs
-/Debug
-/Release
+/.vs/
+/Debug/
+/Release/
+/[Pp]ackages/
 
 # Prerequisites
 *.d
