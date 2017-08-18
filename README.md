@@ -23,12 +23,12 @@ Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded 
 
 1. Add DX to the win32 desktop app:
   1. Add the following code:
-     ```c++
-     	#include <wrl.h>
-	#include <d3d11_4.h>
+```c++
+#include <wrl.h>
+#include <d3d11_4.h>
 	
-	using namespace Microsoft::WRL;
-     ```
+using namespace Microsoft::WRL;
+```
   1. Link against d3d11.lib
   1. Add the following code to create a D3D11Device:
     ```
