@@ -1,4 +1,4 @@
-# Remoting Plugin
+ # Remoting Plugin
 Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded into a plain win32 desktop app
 
 # Steps to create
@@ -22,7 +22,7 @@ Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded 
 	  1. Make sure the DLL is on a path searched by runtime DLL loading subsystem
 
 1. Add DX to the win32 desktop app:
-  1.Add the following code:
+  1. Add the following code:
      ```
      	#include <wrl.h>
 	#include <d3d11_4.h>
