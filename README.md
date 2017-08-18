@@ -14,7 +14,8 @@ C:\Program Files (x86)\Windows Kits\10\UnionMetadata;
 C:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.UniversalApiContract\1.0.0.0;
 C:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\1.0.0.0;
 ```
-	  1. Last, pick the target Windows 10 SDK version
+
+            1. Last, pick the target Windows 10 SDK version
     
 1. Add the Holographic Remoting Nuget package
 1. Consume the DLL from a win32 desktop app:
