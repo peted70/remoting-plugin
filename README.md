@@ -8,10 +8,10 @@ Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded 
 	    1. Add /ZW flag to support (c++/cx) - optional - we could use wrl or raw COM
 	    1. Disable the /Gm flag as minimal build support is not compatible with previous flag
 	    1. Add the following as additional using directories
-		  * C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcpackages;
-		  * C:\Program Files (x86)\Windows Kits\10\UnionMetadata;
-		  * C:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.UniversalApiContract\1.0.0.0;
-		  * C:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\1.0.0.0;
+	        * C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcpackages;
+		* C:\Program Files (x86)\Windows Kits\10\UnionMetadata;
+		* C:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.UniversalApiContract\1.0.0.0;
+		* C:\Program Files (x86)\Windows Kits\10\References\Windows.Foundation.FoundationContract\1.0.0.0;
 	  1. Last, pick the target Windows 10 SDK version
     
 1. Add the Holographic Remoting Nuget package
