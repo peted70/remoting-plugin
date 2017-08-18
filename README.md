@@ -1,7 +1,7 @@
-# remoting-plugin
+# Remoting Plugin
 Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded into a plain win32 desktop app
 
-#Steps to create
+# Steps to create
 1. Create the DLL project
   1. Create a DLL using the Desktop Project wizard in VS 2017 (new)
   1. Add WinRT support to the DLL:
@@ -25,28 +25,28 @@ Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded 
   1.Add the following code:
      ```
      	#include <wrl.h>
-	    #include <d3d11_4.h>
+	#include <d3d11_4.h>
 	
-	    using namespace Microsoft::WRL;
+	using namespace Microsoft::WRL;
      ```
   1. Link against d3d11.lib
   1. Add the following code to create a D3D11Device:
     ```
-    		ComPtr<ID3D11Device> device;
-		ComPtr<ID3D11DeviceContext> context;
+    	ComPtr<ID3D11Device> device;
+	ComPtr<ID3D11DeviceContext> context;
 	
-		UINT creationFlags = D3D11_CREATE_DEVICE_BGRA_SUPPORT | D3D11_CREATE_DEVICE_DEBUG;
-		D3D_FEATURE_LEVEL featureLevels[] =
-		{
-			D3D_FEATURE_LEVEL_11_1,
-			D3D_FEATURE_LEVEL_11_0,
-			D3D_FEATURE_LEVEL_10_1,
-			D3D_FEATURE_LEVEL_10_0
-		};
+	UINT creationFlags = D3D11_CREATE_DEVICE_BGRA_SUPPORT | D3D11_CREATE_DEVICE_DEBUG;
+	D3D_FEATURE_LEVEL featureLevels[] =
+	{
+		D3D_FEATURE_LEVEL_11_1,
+		D3D_FEATURE_LEVEL_11_0,
+		D3D_FEATURE_LEVEL_10_1,
+		D3D_FEATURE_LEVEL_10_0
+	};
 	
-		D3D_FEATURE_LEVEL d3dFeatureLevel;
+	D3D_FEATURE_LEVEL d3dFeatureLevel;
 	
-		const HRESULT hr = D3D11CreateDevice(
+	const HRESULT hr = D3D11CreateDevice(
 			nullptr,        // Either nullptr, or the primary adapter determined by Windows Holographic.
 			D3D_DRIVER_TYPE_HARDWARE,   // Create a device using the hardware graphics driver.
 			0,                          // Should be 0 unless the driver is D3D_DRIVER_TYPE_SOFTWARE.
@@ -57,8 +57,7 @@ Just a test to illustrate calling WinRT APIs inside a self-contained DLL loaded 
 			&device,                    // Returns the Direct3D device created.
 			&d3dFeatureLevel,         // Returns feature level of device created.
 			&context                    // Returns the device immediate context.
-		);
-
+	);
     ```
 
 Idea is that the D3DDevice can be passed across the DLL API and used to initialise a HolographicSpace created there.
