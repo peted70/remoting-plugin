@@ -1,0 +1,8 @@
+﻿  HoloRemotingPlugin.cpp
+c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\d3d11.h(329): warning C4099: 'ID3D11Device': type name first seen using 'class' now seen using 'struct'
+  c:\users\pdaukin\documents\visual studio 2017\projects\holoremotingplugin\holoremotingplugin\holoremotingplugin.h(16): note: see declaration of 'ID3D11Device'
+c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\d3d11.h(13555): warning C4099: 'ID3D11Device': type name first seen using 'class' now seen using 'struct'
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\d3d11.h(13555): note: see declaration of 'ID3D11Device'
+     Creating library C:\Users\pdaukin\Documents\Visual Studio 2017\Projects\HoloRemotingPlugin\Debug\HoloRemotingPlugin.lib and object C:\Users\pdaukin\Documents\Visual Studio 2017\Projects\HoloRemotingPlugin\Debug\HoloRemotingPlugin.exp
+  HoloRemotingPlugin.vcxproj -> C:\Users\pdaukin\Documents\Visual Studio 2017\Projects\HoloRemotingPlugin\Debug\HoloRemotingPlugin.dll
+  HoloRemotingPlugin.vcxproj -> C:\Users\pdaukin\Documents\Visual Studio 2017\Projects\HoloRemotingPlugin\Debug\HoloRemotingPlugin.pdb (Partial PDB)
